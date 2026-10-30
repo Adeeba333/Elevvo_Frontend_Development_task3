@@ -90,6 +90,13 @@ TaskFlow/
 |── problem statement.md
 └── README.md
 ```
+## React Version
+
+The project also includes a React (Vite) version in the `react-version` folder.
+
+- **Components:** Header, Hero, Features, Reviews, Pricing, Footer, AuthModal, Reveal
+- **Hooks:** `useState`, `useEffect`, `useCallback`, and a custom `useTheme` hook
+- **Run it:** `cd react-version`, then `npm install` and `npm run dev`
 
 ##  Responsive Design
 
