@@ -6,23 +6,32 @@
 <title>TaskFlow – Plan less. Finish more.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<script>
+    try {
+        var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="wrap">
-    <nav aria-label="Main">
-        <a class="logo" href="#top"><img src="logo.png" alt="" width="44" height="44">TaskFlow</a>
-        <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="nav-actions">
-            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">☀</button>
-            <a class="btn btn-line" href="#pricing" style="padding:9px 18px">Get started</a>
-        </div>
-    </nav>
+<header class="site-header">
+    <div class="wrap">
+        <nav aria-label="Main">
+            <a class="logo" href="#top"><img src="logo.png" alt="" width="44" height="44">TaskFlow</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">☀</button>
+                <button class="btn btn-line" id="openAuth" type="button">Get started</button>
+                <button class="theme-toggle menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+            </div>
+        </nav>
+    </div>
 </header>
 
 <main id="top">
@@ -208,6 +217,32 @@
     </div>
 </footer>
 
+<div class="modal" id="authModal" hidden role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="modal-box">
+        <button class="modal-close" id="closeAuth" type="button" aria-label="Close">&times;</button>
+        <h2 id="authTitle">Welcome to TaskFlow</h2>
+
+        <div class="tabs" role="tablist">
+            <button class="tab active" id="tabSignup" type="button" role="tab" aria-selected="true" data-tab="signup">Sign up</button>
+            <button class="tab" id="tabLogin" type="button" role="tab" aria-selected="false" data-tab="login">Log in</button>
+        </div>
+
+        <form id="signupForm">
+            <div class="field"><label for="suName">Full name</label><input id="suName" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="suEmail">Email</label><input id="suEmail" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="suPass">Password (8+ characters)</label><input id="suPass" type="password" autocomplete="new-password" minlength="8" required></div>
+            <button class="btn btn-gold full" type="submit">Create account</button>
+            <p class="form-msg" aria-live="polite"></p>
+        </form>
+
+        <form id="loginForm" hidden>
+            <div class="field"><label for="liEmail">Email</label><input id="liEmail" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="liPass">Password</label><input id="liPass" type="password" autocomplete="current-password" required></div>
+            <button class="btn btn-gold full" type="submit">Log in</button>
+            <p class="form-msg" aria-live="polite"></p>
+        </form>
+    </div>
+</div>
 <script src="script.js" defer></script>
 </body>
 </html>
