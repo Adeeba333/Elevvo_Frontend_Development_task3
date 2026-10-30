@@ -584,7 +584,7 @@ footer .logo{color:var(--gold)}
 .field input{
     width:100%;
     padding:12px 14px;
-    border-radius:10px;
+    border-radius:40px;
     border:2px solid rgba(128,128,128,.4);
     background:var(--bg);
     color:var(--text);
@@ -603,3 +603,31 @@ footer .logo{color:var(--gold)}
     color:var(--accent);
     font-weight:700}
 .field input:user-invalid{border-color:#e5645a}
+.to-the-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-color: #1b2638;
+    border-radius: 50%;
+    background: #f5cc4e;
+    color: #1b2638;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    z-index: 999;
+}
+.to-the-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.to-the-top.show {
+    opacity: 1;
+    visibility: visible;
+}

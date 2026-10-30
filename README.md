@@ -18,6 +18,7 @@ The project focuses on frontend development using HTML5, CSS3, and JavaScript ES
 - **Scroll Animations:** Uses scroll-based effects to reveal page sections.
 - **Responsive Layout:** Adapts the website to desktop, tablet, and mobile screens.
 - **Accessibility Support:** Includes semantic structure, keyboard interactions, and reduced-motion support.
+- **Back to Top Button:** Allows users to smoothly return to the top of the page after scrolling down.
 
 ## Technical Stack
 
@@ -39,6 +40,7 @@ The project focuses on frontend development using HTML5, CSS3, and JavaScript ES
 - Used IntersectionObserver for scroll-based section animations.
 - Applied CSS transitions for smoother interactions.
 - Included reduced-motion support for accessibility.
+- Implemented a scroll-triggered Back to Top button using JavaScript scroll events and CSS visibility transitions.
 
 ## Project Structure
 

@@ -74,3 +74,20 @@ function setMenu(open) {
 
 menuBtn.onclick = function () { setMenu(!navLinks.classList.contains('open')); };
 navLinks.onclick = function (e) { if (e.target.tagName === 'A') setMenu(false); };
+
+const toTheTop = document.getElementById("toTheTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        toTheTop.classList.add("show");
+    } else {
+        toTheTop.classList.remove("show");
+    }
+});
+
+toTheTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

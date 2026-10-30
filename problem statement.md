@@ -5,6 +5,7 @@ The website should present the TaskFlow application through a hero section, feat
 Responsive design, semantic HTML, CSS Flexbox/Grid, theme customization, and accessibility practices should be used to create a clean and adaptable layout.  
 JavaScript DOM manipulation and event handling should control interactive features such as dark/light mode, mobile navigation, authentication modals, and scroll-based animations.  
 CSS transitions and responsive techniques should be used to provide smooth interactions and a consistent experience across different screen sizes.
+A Back to Top button should also be implemented to allow users to smoothly navigate to the beginning of the page after scrolling through its content.
 
 # Technical Problem Review
 
@@ -16,3 +17,4 @@ CSS transitions and responsive techniques should be used to provide smooth inter
 - Applied CSS transitions and animations to make the navigation, buttons, cards, modal, and page sections feel smoother.
 - Added responsive CSS using media queries, Flexbox, and Grid so the layout adapts to different screen sizes.
 - Added reduced-motion support to improve accessibility for users who prefer fewer animations.
+- Added a Back to Top button that appears after scrolling down and smoothly returns users to the top of the page when clicked.
