@@ -43,7 +43,10 @@ The project focuses on frontend development using HTML5, CSS3, and JavaScript ES
 ## Project Structure
 
 ```text
-TaskFlow/
+## Project Structure
+
+```text
+Elevvo_Frontend_Development_task3/
 │
 ├── plain-html/
 │   ├── index.html
@@ -53,7 +56,10 @@ TaskFlow/
 │
 ├── react-version/
 │
+├── .gitignore
 ├── README.md
+├── package.json
+├── package-lock.json
 └── problem statement.md
 ```
 
