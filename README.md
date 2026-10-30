@@ -1,144 +1,74 @@
-# TaskFlow – One-Page Task Management Website
+# TaskFlow – Responsive Task Management Website
 
-## Project Overview
+## About the Project
 
-**TaskFlow** is a fictional task-management application website developed as part of the Elevvo Frontend Development Internship – Task 3.
+TaskFlow is a responsive, one-page task-management website designed to present a modern productivity platform. It introduces the application's features, user reviews, pricing plans, and other key information through a clean and structured interface.
 
-The project presents a modern one-page website for an application that helps users organize tasks, manage priorities, receive reminders, and track progress. The page is designed to work across both mobile and desktop screen sizes.
-
-The website includes a hero section, feature cards, user reviews, pricing plans, contact information, social media links, and interactive elements.
-
-## Project Objective
-
-The main objective of this project is to design and develop a clean, responsive, and interactive landing page for a fictional task-management application while practicing responsive layout design, JavaScript interactions, and frontend development fundamentals.
+The project focuses on frontend development using HTML5, CSS3, and JavaScript ES6+. It demonstrates semantic HTML, responsive layouts, DOM manipulation, event handling, and interactive UI components.
 
 ## Core Features
 
-###  Hero Section
-- TaskFlow app name and branding.
-- Main headline and supporting description.
-- "Start free" and "See how it works" buttons.
-- Responsive hero layout with TaskFlow logo.
+- **Hero Section:** Introduces TaskFlow with a clear heading and call-to-action buttons.
+- **Features Section:** Highlights the main capabilities of the task-management platform.
+- **User Reviews:** Displays customer feedback and testimonials.
+- **Pricing Section:** Presents available subscription plans.
+- **Dark/Light Mode:** Allows users to switch between different visual themes.
+- **Responsive Navigation:** Provides a mobile-friendly navigation menu.
+- **Authentication Modal:** Includes login and signup forms with tab switching.
+- **Scroll Animations:** Uses scroll-based effects to reveal page sections.
+- **Responsive Layout:** Adapts the website to desktop, tablet, and mobile screens.
+- **Accessibility Support:** Includes semantic structure, keyboard interactions, and reduced-motion support.
 
-###  Features Section
-The website presents three main TaskFlow features:
+## Technical Stack
 
-- **Smart Lists** – Organize tasks into projects and manage due dates.
-- **Gentle Reminders** – Receive reminders at the appropriate time.
-- **Progress Insights** – Track completed tasks and productivity habits.
+| Technology | Purpose |
+|---|---|
+| HTML5 | Semantic page structure |
+| CSS3 | Styling, layouts, animations, and responsiveness |
+| JavaScript ES6+ | DOM manipulation and interactive functionality |
+| SVG | Scalable visual elements |
+| Google Fonts | Typography |
 
-###  User Reviews
-The website includes three fictional customer reviews representing:
-- A computer science student.
-- A freelance web developer.
-- A project manager.
+## Technical Implementation
 
-###  Pricing Section
-Three pricing plans are provided:
+- Used CSS Flexbox and Grid to organize page content.
+- Applied media queries to make the layout responsive.
+- Used JavaScript event listeners to manage user interactions.
+- Implemented theme switching through DOM manipulation.
+- Created mobile navigation and authentication modal functionality.
+- Used IntersectionObserver for scroll-based section animations.
+- Applied CSS transitions for smoother interactions.
+- Included reduced-motion support for accessibility.
 
-- **Free** – Basic task management features.
-- **Pro** – Advanced features and unlimited projects.
-- **Team** – Collaboration and shared project features.
-
-###  Dark/Light Mode
-Users can switch between dark and light themes using the theme toggle. The selected theme is stored in `localStorage` so it can be remembered between visits.
-
-###  Responsive Navigation
-The navigation changes for smaller screens and includes a mobile menu toggle. The menu automatically closes when a navigation link is selected.
-
-###  Authentication Modal
-The "Get started" button opens an authentication modal containing:
-- Sign-up form.
-- Login form.
-- Tab switching.
-- Form fields for name, email, and password.
-- Basic form interaction and feedback.
-
-The modal can also be closed using the close button, clicking outside the modal, or pressing the Escape key.
-
-###  Scroll Reveal Animation
-Sections use a scroll-based reveal effect. The JavaScript `IntersectionObserver` detects when sections enter the viewport and adds an animation class.
-
-###  Accessibility Considerations
-The project includes accessibility-focused features such as:
-- Semantic HTML elements.
-- Navigation labels.
-- Alternative text for the TaskFlow logo.
-- ARIA labels for interactive controls.
-- Visible keyboard focus styles.
-- Reduced-motion support.
-
-The CSS includes a `prefers-reduced-motion` rule that disables animations for users who prefer reduced motion.
-
-##  Technologies Used
-
-- **HTML5** – Semantic page structure and content.
-- **CSS3** – Styling, responsive layouts, themes, animations, and visual design.
-- **JavaScript** – Interactive functionality and DOM manipulation.
-- **SVG** – Feature and social media icons.
-- **Google Fonts** – Roboto Mono typography.
-
-##  Project Structure
+## Project Structure
 
 ```text
 TaskFlow/
 │
-├── index.html
-├── style.css
-├── script.js
-├── logo.png
-|── problem statement.md
-└── README.md
+├── plain-html/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── logo.png
+│
+├── react-version/
+│
+├── README.md
+└── problem statement.md
 ```
-## React Version
 
-The project also includes a React (Vite) version in the `react-version` folder.
+## Project Objective
 
-- **Components:** Header, Hero, Features, Reviews, Pricing, Footer, AuthModal, Reveal
-- **Hooks:** `useState`, `useEffect`, `useCallback`, and a custom `useTheme` hook
-- **Run it:** `cd react-version`, then `npm install` and `npm run dev`
+The main objective of this project is to develop a responsive and interactive landing page while applying core frontend development concepts. It provides practical experience in creating structured layouts, implementing JavaScript functionality, and improving usability across different screen sizes.
 
-##  Responsive Design
+## Learning Outcomes
 
-The website uses CSS media queries to adapt its layout to different screen sizes. Feature cards, reviews, pricing plans, navigation, and footer content adjust according to the available screen width.
+- Improved understanding of semantic HTML5 and CSS3.
+- Practiced responsive web design using Flexbox, Grid, and media queries.
+- Gained experience with JavaScript DOM manipulation and event handling.
+- Learned to implement interactive components and animations.
+- Developed a better understanding of frontend accessibility practices.
 
-##  Design
+## Repository
 
-The interface uses a dark navy, gold, cream, and brown color palette. CSS variables are used to manage the theme colors and make dark/light mode switching easier.
-
-The design also uses responsive typography, flexible grids, buttons, cards, and spacing to maintain a consistent appearance across devices.
-
-##  Learning Outcomes
-
-Through this project, I practiced:
-
-- Creating a complete one-page website.
-- Building responsive layouts with CSS.
-- Using semantic HTML elements.
-- Creating reusable styling patterns with CSS variables.
-- Implementing JavaScript-based UI interactions.
-- Working with DOM events.
-- Using `IntersectionObserver` for scroll animations.
-- Implementing dark/light theme switching.
-- Creating responsive mobile navigation.
-- Building interactive modal forms.
-- Applying basic accessibility practices.
-
-##  How to Run
-
-1. Download or clone the repository.
-2. Open the project folder.
-3. Make sure `index.html`, `style.css`, `script.js`, and `logo.png` are in the appropriate locations.
-4. Open `index.html` in a browser.
-
-No backend or database is required because TaskFlow is a fictional frontend practice project.
-
-##  Internship Task
-
-**Program:** Elevvo Frontend Development Internship  
-**Task:** Task 3 – One-Page Website for a Task App  
-**Project:** TaskFlow  
-**Developer:** Mahmuda Adeeba Tul Husna
----
-
-*TaskFlow is a fictional application created for frontend development practice.*
+[GitHub Repository](https://github.com/Adeeba333/Elevvo_Frontend_Development_task3)
