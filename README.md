@@ -42,10 +42,7 @@ The project focuses on frontend development using HTML5, CSS3, and JavaScript ES
 
 ## Project Structure
 
-```text
-## Project Structure
-
-```text
+``` 
 Elevvo_Frontend_Development_task3/
 │
 ├── plain-html/
@@ -75,6 +72,6 @@ The main objective of this project is to develop a responsive and interactive la
 - Learned to implement interactive components and animations.
 - Developed a better understanding of frontend accessibility practices.
 
-## Repository
+## Author
 
-[GitHub Repository](https://github.com/Adeeba333/Elevvo_Frontend_Development_task3)
+Mahmuda Adeeba Tul Husna | 2026
